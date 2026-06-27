@@ -1,6 +1,6 @@
 export interface Clase {
-    id?: number
-    id_curso: number
-    fecha?: Date
-    descripcion?: string
-}
+    id?: number;
+    cursoId: number;
+    fecha: string; 
+    descripcion: string;
+  }

@@ -1,155 +1,311 @@
-2026-05-17 18:26:37 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - Starting EurekaServerApplication using Java 22.0.2 with PID 2196 (C:\Users\UsuarioCompuElite\Desktop\trabajo_full_3\plataforma_lc_digital\plataforma_lc\sistema_infra\eurekaServer\target\classes started by UsuarioCompuElite in C:\Users\UsuarioCompuElite\Desktop\trabajo_full_3\plataforma_lc_digital\plataforma_lc\sistema_infra\eurekaServer)
-2026-05-17 18:26:37 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - No active profile set, falling back to 1 default profile: "default"
-2026-05-17 18:26:38 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=57f86799-46fa-3d2d-ab22-fdd527bc2d0b
-2026-05-17 18:26:38 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
-2026-05-17 18:26:38 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-17 18:26:38 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
-2026-05-17 18:26:38 [main] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1336 ms
-2026-05-17 18:26:39 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
-2026-05-17 18:26:39 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
-2026-05-17 18:26:39 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
-2026-05-17 18:26:39 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
-2026-05-17 18:26:39 [main] INFO  org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-05-17 18:26:41 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2026-05-17 18:26:42 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2026-05-17 18:26:42 [main] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-05-17 18:26:42 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2026-05-17 18:26:42 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2026-05-17 18:26:42 [main] INFO  com.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
-2026-05-17 18:26:42 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1779056802392 with initial instances count: 0
-2026-05-17 18:26:42 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initializing ...
-2026-05-17 18:26:42 [main] WARN  com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
-2026-05-17 18:26:42 [main] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
-2026-05-17 18:26:42 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initialized
-2026-05-17 18:26:42 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application EUREKA-SERVER with eureka with status UP
-2026-05-17 18:26:42 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - isAws returned false
-2026-05-17 18:26:42 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - Initialized server context
-2026-05-17 18:26:42 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
-2026-05-17 18:26:42 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
-2026-05-17 18:26:42 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Changing status to UP
-2026-05-17 18:26:42 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration - Started Eureka Server
-2026-05-17 18:26:42 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
-2026-05-17 18:26:42 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8761
-2026-05-17 18:26:43 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2026-05-17 18:26:43 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - Started EurekaServerApplication in 7.864 seconds (process running for 8.436)
-2026-05-17 18:27:04 [http-nio-8761-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-17 18:27:04 [http-nio-8761-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-05-17 18:27:04 [http-nio-8761-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2026-05-17 18:27:04 [http-nio-8761-exec-1] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: APIGATEWAY - localhost:apiGateway:8085
-2026-05-17 18:27:04 [http-nio-8761-exec-1] WARN  com.netflix.eureka.resources.InstanceResource - Not Found (Renew): APIGATEWAY - localhost:apiGateway:8085
-2026-05-17 18:27:04 [http-nio-8761-exec-3] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance APIGATEWAY/localhost:apiGateway:8085 with status UP (replication=false)
-2026-05-17 18:27:04 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:27:04.428926800
-2026-05-17 18:27:04 [http-nio-8761-exec-4] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance APIGATEWAY/localhost:apiGateway:8085 with status UP (replication=false)
-2026-05-17 18:27:04 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:27:04.454518700
-2026-05-17 18:27:07 [http-nio-8761-exec-6] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance CURSO/localhost:curso:8081 with status UP (replication=false)
-2026-05-17 18:27:07 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-05-17T18:27:07.986182400
-2026-05-17 18:27:34 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:27:34.493799700
-2026-05-17 18:27:37 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-05-17T18:27:37.967972
-2026-05-17 18:27:42 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:28:04 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:28:04.527192200
-2026-05-17 18:28:34 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:28:34.547920100
-2026-05-17 18:28:42 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:29:04 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:29:04.570710100
-2026-05-17 18:29:34 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:29:34.604743900
-2026-05-17 18:29:42 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
-2026-05-17 18:30:04 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:30:04.630898200
-2026-05-17 18:30:34 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:30:34.664501300
-2026-05-17 18:30:42 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
-2026-05-17 18:31:04 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:31:04.692141200
-2026-05-17 18:31:34 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:31:34.715512100
-2026-05-17 18:31:42 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
-2026-05-17 18:31:51 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - Starting EurekaServerApplication using Java 22.0.2 with PID 1932 (C:\Users\UsuarioCompuElite\Desktop\trabajo_full_3\plataforma_lc_digital\plataforma_lc\sistema_infra\eurekaServer\target\classes started by UsuarioCompuElite in C:\Users\UsuarioCompuElite\Desktop\trabajo_full_3\plataforma_lc_digital\plataforma_lc\sistema_infra\eurekaServer)
-2026-05-17 18:31:51 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - No active profile set, falling back to 1 default profile: "default"
-2026-05-17 18:31:52 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=57f86799-46fa-3d2d-ab22-fdd527bc2d0b
-2026-05-17 18:31:52 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
-2026-05-17 18:31:52 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-17 18:31:52 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
-2026-05-17 18:31:52 [main] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1313 ms
-2026-05-17 18:31:53 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
-2026-05-17 18:31:53 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
-2026-05-17 18:31:53 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
-2026-05-17 18:31:53 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
-2026-05-17 18:31:53 [main] INFO  org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-05-17 18:31:55 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2026-05-17 18:31:56 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2026-05-17 18:31:56 [main] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-05-17 18:31:56 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2026-05-17 18:31:56 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2026-05-17 18:31:56 [main] INFO  com.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
-2026-05-17 18:31:56 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1779057116574 with initial instances count: 0
-2026-05-17 18:31:56 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initializing ...
-2026-05-17 18:31:56 [main] WARN  com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
-2026-05-17 18:31:56 [main] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
-2026-05-17 18:31:56 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initialized
-2026-05-17 18:31:56 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application EUREKA-SERVER with eureka with status UP
-2026-05-17 18:31:56 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - isAws returned false
-2026-05-17 18:31:56 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - Initialized server context
-2026-05-17 18:31:56 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
-2026-05-17 18:31:56 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
-2026-05-17 18:31:56 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Changing status to UP
-2026-05-17 18:31:56 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration - Started Eureka Server
-2026-05-17 18:31:56 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
-2026-05-17 18:31:56 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8761
-2026-05-17 18:31:57 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2026-05-17 18:31:57 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - Started EurekaServerApplication in 7.779 seconds (process running for 8.335)
-2026-05-17 18:32:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:32:03 [http-nio-8761-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-17 18:32:03 [http-nio-8761-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-05-17 18:32:03 [http-nio-8761-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2026-05-17 18:32:04 [http-nio-8761-exec-3] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: APIGATEWAY - localhost:apiGateway:8085
-2026-05-17 18:32:04 [http-nio-8761-exec-3] WARN  com.netflix.eureka.resources.InstanceResource - Not Found (Renew): APIGATEWAY - localhost:apiGateway:8085
-2026-05-17 18:32:04 [http-nio-8761-exec-7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance APIGATEWAY/localhost:apiGateway:8085 with status UP (replication=false)
-2026-05-17 18:32:04 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:32:04.831078400
-2026-05-17 18:32:06 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:32:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
-2026-05-17 18:32:16 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
-2026-05-17 18:32:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
-2026-05-17 18:32:26 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
-2026-05-17 18:32:31 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
-2026-05-17 18:32:34 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:32:34.867145700
-2026-05-17 18:32:36 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:32:40 [http-nio-8761-exec-10] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance CURSO/localhost:curso:8081 with status UP (replication=false)
-2026-05-17 18:32:40 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-05-17T18:32:40.844171
-2026-05-17 18:32:41 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
-2026-05-17 18:32:46 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
-2026-05-17 18:32:51 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
-2026-05-17 18:32:56 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
-2026-05-17 18:33:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
-2026-05-17 18:33:04 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:33:04.901218800
-2026-05-17 18:33:06 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
-2026-05-17 18:33:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
-2026-05-17 18:33:16 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
-2026-05-17 18:33:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
-2026-05-17 18:33:26 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
-2026-05-17 18:33:31 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
-2026-05-17 18:33:34 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:33:34.921324
-2026-05-17 18:33:36 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
-2026-05-17 18:33:41 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
-2026-05-17 18:33:46 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
-2026-05-17 18:33:51 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
-2026-05-17 18:33:56 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
-2026-05-17 18:34:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
-2026-05-17 18:34:04 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:34:04.939939200
-2026-05-17 18:34:06 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
-2026-05-17 18:34:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
-2026-05-17 18:34:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Evicting 1 items (expired=1, evictionLimit=1)
-2026-05-17 18:34:11 [Eureka-EvictionTimer] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: expired lease for CURSO/localhost:curso:8081
-2026-05-17 18:34:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Cancelled instance CURSO/localhost:curso:8081 (replication=false)
-2026-05-17 18:34:11 [Eureka-EvictionTimer] ERROR com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO CAÍDO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-05-17T18:34:11.886180100
-2026-05-17 18:34:16 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:34:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
-2026-05-17 18:34:26 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
-2026-05-17 18:34:31 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
-2026-05-17 18:34:34 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:34:34.963865600
-2026-05-17 18:34:36 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
-2026-05-17 18:34:41 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:34:46 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
-2026-05-17 18:34:51 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
-2026-05-17 18:34:56 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
-2026-05-17 18:35:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
-2026-05-17 18:35:04 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-05-17T18:35:04.990273500
-2026-05-17 18:35:06 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
-2026-05-17 18:35:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
-2026-05-17 18:35:16 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
-2026-05-17 18:35:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
-2026-05-17 18:35:26 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:39:06 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - Starting EurekaServerApplication using Java 22.0.2 with PID 30608 (C:\Users\UsuarioCompuElite\Desktop\trabajo_full_3\plataforma_lc_digital\plataforma_lc\sistema_infra\eurekaServer\target\classes started by UsuarioCompuElite in C:\Users\UsuarioCompuElite\Desktop\trabajo_full_3\plataforma_lc_digital\plataforma_lc\sistema_infra\eurekaServer)
+2026-06-27 00:39:06 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-27 00:39:09 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=57f86799-46fa-3d2d-ab22-fdd527bc2d0b
+2026-06-27 00:39:10 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2026-06-27 00:39:10 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-27 00:39:10 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-06-27 00:39:10 [main] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3490 ms
+2026-06-27 00:39:11 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2026-06-27 00:39:11 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2026-06-27 00:39:12 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2026-06-27 00:39:12 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2026-06-27 00:39:12 [main] INFO  org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-06-27 00:39:15 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-06-27 00:39:16 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-06-27 00:39:16 [main] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-27 00:39:16 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-06-27 00:39:16 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-06-27 00:39:16 [main] INFO  com.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2026-06-27 00:39:16 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1782535156570 with initial instances count: 0
+2026-06-27 00:39:16 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initializing ...
+2026-06-27 00:39:16 [main] WARN  com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2026-06-27 00:39:16 [main] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2026-06-27 00:39:16 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initialized
+2026-06-27 00:39:16 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application EUREKA-SERVER with eureka with status UP
+2026-06-27 00:39:16 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - isAws returned false
+2026-06-27 00:39:16 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap - Initialized server context
+2026-06-27 00:39:16 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2026-06-27 00:39:16 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2026-06-27 00:39:16 [Thread-10] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl - Changing status to UP
+2026-06-27 00:39:16 [Thread-10] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration - Started Eureka Server
+2026-06-27 00:39:16 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
+2026-06-27 00:39:16 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8761
+2026-06-27 00:39:17 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-06-27 00:39:17 [main] INFO  com.plataforma_lc.eurekaServer.EurekaServerApplication - Started EurekaServerApplication in 13.474 seconds (process running for 15.84)
+2026-06-27 00:39:18 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:20 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:39:20 [http-nio-8761-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-27 00:39:20 [http-nio-8761-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-27 00:39:20 [http-nio-8761-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-06-27 00:39:22 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2026-06-27 00:39:24 [http-nio-8761-exec-4] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: ADMIN-SERVER - localhost:admin-server:8062
+2026-06-27 00:39:24 [http-nio-8761-exec-4] WARN  com.netflix.eureka.resources.InstanceResource - Not Found (Renew): ADMIN-SERVER - localhost:admin-server:8062
+2026-06-27 00:39:24 [http-nio-8761-exec-5] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance ADMIN-SERVER/localhost:admin-server:8062 with status DOWN (replication=false)
+2026-06-27 00:39:24 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:39:24.187856900
+2026-06-27 00:39:24 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
+2026-06-27 00:39:25 [http-nio-8761-exec-3] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance ADMIN-SERVER/localhost:admin-server:8062 with status UP (replication=false)
+2026-06-27 00:39:25 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:39:25.074378300
+2026-06-27 00:39:25 [http-nio-8761-exec-7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance ASISTENCIA/localhost:asistencia:8082 with status UP (replication=false)
+2026-06-27 00:39:25 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:39:25.120038600
+2026-06-27 00:39:25 [http-nio-8761-exec-8] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance CURSO/localhost:curso:8081 with status UP (replication=false)
+2026-06-27 00:39:25 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:39:25.774419900
+2026-06-27 00:39:26 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:39:27 [http-nio-8761-exec-1] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance ESTUDIANTE/localhost:estudiante with status UP (replication=false)
+2026-06-27 00:39:27 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:39:27.326033600
+2026-06-27 00:39:28 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:30 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:39:30.087286800
+2026-06-27 00:39:30 [http-nio-8761-exec-3] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance EVALUACIONES/localhost:evaluaciones:8083 with status UP (replication=false)
+2026-06-27 00:39:30 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:39:30.217087
+2026-06-27 00:39:30 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:39:32 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:34 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:39:35 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:39:35.109186600
+2026-06-27 00:39:35 [http-nio-8761-exec-10] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: APIGATEWAY - localhost:apiGateway:8085
+2026-06-27 00:39:35 [http-nio-8761-exec-10] WARN  com.netflix.eureka.resources.InstanceResource - Not Found (Renew): APIGATEWAY - localhost:apiGateway:8085
+2026-06-27 00:39:35 [http-nio-8761-exec-2] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance APIGATEWAY/localhost:apiGateway:8085 with status UP (replication=false)
+2026-06-27 00:39:35 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO REGISTRADO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:39:35.749234300
+2026-06-27 00:39:36 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:39:38 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:39:40 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:39:40.145354100
+2026-06-27 00:39:40 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:42 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2026-06-27 00:39:44 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:39:45 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:39:45.166175600
+2026-06-27 00:39:46 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:48 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:50 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:39:50.199089400
+2026-06-27 00:39:50 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2026-06-27 00:39:52 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:54 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:39:54.209094500
+2026-06-27 00:39:54 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:55 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:39:55.233286500
+2026-06-27 00:39:55 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:39:55.741001
+2026-06-27 00:39:56 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:39:57 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:39:57.289347700
+2026-06-27 00:39:58 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:00 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:40:00.194595800
+2026-06-27 00:40:00 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:00.257206800
+2026-06-27 00:40:00 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:02 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:04 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:05 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:05.282389500
+2026-06-27 00:40:05 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:40:05.777961600
+2026-06-27 00:40:06 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:08 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:10 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:10.302616500
+2026-06-27 00:40:10 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:12 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:40:14 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2026-06-27 00:40:15 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:15.330085800
+2026-06-27 00:40:16 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:40:18 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:40:20 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:20.362189600
+2026-06-27 00:40:20 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:40:22 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:40:24 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:40:24.233502700
+2026-06-27 00:40:24 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:40:25 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:25.395714800
+2026-06-27 00:40:25 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:40:25.766877900
+2026-06-27 00:40:26 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
+2026-06-27 00:40:27 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:40:27.309698900
+2026-06-27 00:40:29 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:40:30 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:40:30.222639100
+2026-06-27 00:40:30 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:30.426000700
+2026-06-27 00:40:31 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:40:33 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:40:35 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2026-06-27 00:40:35 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:35.463294700
+2026-06-27 00:40:35 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:40:35.803453800
+2026-06-27 00:40:37 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:40:39 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:40:40 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:40.497103700
+2026-06-27 00:40:41 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:40:43 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:40:45 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:40:45 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:45.516917600
+2026-06-27 00:40:47 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:40:49 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:40:50 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:50.543873500
+2026-06-27 00:40:51 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:40:53 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2026-06-27 00:40:54 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:40:54.256059500
+2026-06-27 00:40:55 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:55 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:40:55.577163800
+2026-06-27 00:40:55 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:40:55.791653900
+2026-06-27 00:40:57 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:40:57 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:40:57.341291400
+2026-06-27 00:40:59 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:41:00 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:41:00.254793400
+2026-06-27 00:41:00 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:00.609015200
+2026-06-27 00:41:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:41:03 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:41:05 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:41:05 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:05.637124100
+2026-06-27 00:41:05 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:41:05.824079500
+2026-06-27 00:41:07 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:41:09 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:41:10 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:10.659503800
+2026-06-27 00:41:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:41:13 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:41:15 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:41:15 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:15.689179300
+2026-06-27 00:41:17 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2026-06-27 00:41:19 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:41:20 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:20.709937900
+2026-06-27 00:41:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:41:23 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2026-06-27 00:41:24 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:41:24.283232100
+2026-06-27 00:41:25 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2026-06-27 00:41:25 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:25.731444600
+2026-06-27 00:41:25 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:41:25.825952600
+2026-06-27 00:41:27 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2026-06-27 00:41:27 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:41:27.364819900
+2026-06-27 00:41:29 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2026-06-27 00:41:30 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:41:30.279434500
+2026-06-27 00:41:30 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:30.760301100
+2026-06-27 00:41:31 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2026-06-27 00:41:33 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:41:35 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:41:35 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:35.792557600
+2026-06-27 00:41:35 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:41:35.850256300
+2026-06-27 00:41:37 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:41:39 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:41:40 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:40.823351900
+2026-06-27 00:41:41 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:41:43 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:41:45 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:41:45 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:45.851040400
+2026-06-27 00:41:47 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:41:49 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:41:50 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:50.881303400
+2026-06-27 00:41:51 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:41:53 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:41:54 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:41:54.305703
+2026-06-27 00:41:55 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:41:55 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:41:55.852632200
+2026-06-27 00:41:55 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:41:55.915997600
+2026-06-27 00:41:57 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
+2026-06-27 00:41:57 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:41:57.387162
+2026-06-27 00:41:59 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:42:00 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:42:00.301091900
+2026-06-27 00:42:00 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:00.950339
+2026-06-27 00:42:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
+2026-06-27 00:42:03 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2026-06-27 00:42:05 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:42:05 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:42:05.877199
+2026-06-27 00:42:05 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:05.970161600
+2026-06-27 00:42:07 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:42:09 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:42:10 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:10.988017
+2026-06-27 00:42:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:42:13 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:42:15 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:42:16 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:16.018080100
+2026-06-27 00:42:17 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:42:19 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:42:21 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:21.048284500
+2026-06-27 00:42:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:42:23 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:42:24 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:42:24.331878400
+2026-06-27 00:42:25 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:42:25 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:42:25.879347100
+2026-06-27 00:42:26 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:26.083757
+2026-06-27 00:42:27 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:42:27.412160200
+2026-06-27 00:42:27 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:42:29 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
+2026-06-27 00:42:30 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:42:30.331598
+2026-06-27 00:42:31 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:31.109503400
+2026-06-27 00:42:31 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:42:33 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:42:35 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2026-06-27 00:42:35 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:42:35.905709
+2026-06-27 00:42:36 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:36.138044300
+2026-06-27 00:42:37 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:42:39 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2026-06-27 00:42:41 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:41.165906700
+2026-06-27 00:42:41 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:42:43 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:42:45 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:42:46 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:46.190132
+2026-06-27 00:42:47 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:42:49 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:42:51 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:51.225038
+2026-06-27 00:42:51 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2026-06-27 00:42:53 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:42:54 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:42:54.354620700
+2026-06-27 00:42:55 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
+2026-06-27 00:42:55 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:42:55.898665600
+2026-06-27 00:42:56 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:42:56.252681300
+2026-06-27 00:42:57 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:42:57.438778100
+2026-06-27 00:42:57 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:42:59 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
+2026-06-27 00:43:00 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:43:00.363201500
+2026-06-27 00:43:01 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:01.275496600
+2026-06-27 00:43:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:43:03 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:43:05 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:43:05 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:43:05.928956
+2026-06-27 00:43:06 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:06.298068300
+2026-06-27 00:43:07 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
+2026-06-27 00:43:09 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:43:11 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:11.322554
+2026-06-27 00:43:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:43:13 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:43:15 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:43:16 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:16.342060900
+2026-06-27 00:43:17 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:43:19 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:43:21 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:21.368380
+2026-06-27 00:43:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:43:23 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:43:24 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:43:24.374376200
+2026-06-27 00:43:25 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:43:25 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:43:25.922238500
+2026-06-27 00:43:26 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:26.387503300
+2026-06-27 00:43:27 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:43:27.466124300
+2026-06-27 00:43:27 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:43:29 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:43:30 [http-nio-8761-exec-8] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:43:30.390458800
+2026-06-27 00:43:31 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:31.417950200
+2026-06-27 00:43:31 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:43:33 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:43:35 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
+2026-06-27 00:43:35 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:43:35.961032300
+2026-06-27 00:43:36 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:36.438275100
+2026-06-27 00:43:37 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2026-06-27 00:43:39 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:43:41 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:41.464168700
+2026-06-27 00:43:41 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:43:43 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:43:45 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:43:46 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:46.488800300
+2026-06-27 00:43:47 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2026-06-27 00:43:49 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:43:51 [http-nio-8761-exec-3] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:51.513810600
+2026-06-27 00:43:51 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2026-06-27 00:43:53 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:43:54 [http-nio-8761-exec-9] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ADMIN-SERVER | Instancia: localhost:admin-server:8062 | Timestamp: 2026-06-27T00:43:54.394777300
+2026-06-27 00:43:55 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2026-06-27 00:43:55 [http-nio-8761-exec-1] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: CURSO | Instancia: localhost:curso:8081 | Timestamp: 2026-06-27T00:43:55.945318600
+2026-06-27 00:43:56 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:43:56.546769600
+2026-06-27 00:43:57 [http-nio-8761-exec-5] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ESTUDIANTE | Instancia: localhost:estudiante | Timestamp: 2026-06-27T00:43:57.495685
+2026-06-27 00:43:57 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2026-06-27 00:43:59 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2026-06-27 00:44:00 [http-nio-8761-exec-6] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: EVALUACIONES | Instancia: localhost:evaluaciones:8083 | Timestamp: 2026-06-27T00:44:00.420367200
+2026-06-27 00:44:01 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:44:01.579413300
+2026-06-27 00:44:01 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2026-06-27 00:44:03 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2026-06-27 00:44:05 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2026-06-27 00:44:05 [http-nio-8761-exec-2] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: APIGATEWAY | Instancia: localhost:apiGateway:8085 | Timestamp: 2026-06-27T00:44:05.991138100
+2026-06-27 00:44:06 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:44:06.612457600
+2026-06-27 00:44:07 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2026-06-27 00:44:09 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:44:11 [http-nio-8761-exec-7] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:44:11.631357
+2026-06-27 00:44:11 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:44:13 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2026-06-27 00:44:15 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2026-06-27 00:44:16 [http-nio-8761-exec-10] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:44:16.664197600
+2026-06-27 00:44:17 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2026-06-27 00:44:19 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2026-06-27 00:44:21 [http-nio-8761-exec-4] INFO  com.plataforma_lc.eurekaServer.listeners.EurekaEventListener - [SERVICIO ACTIVO] Servicio: ASISTENCIA | Instancia: localhost:asistencia:8082 | Timestamp: 2026-06-27T00:44:21.691591700
+2026-06-27 00:44:21 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms

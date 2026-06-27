@@ -5,6 +5,10 @@ export const cursoApi = axios.create({
   baseURL: 'http://localhost:8085',
 })
 
+export const claseApi = axios.create({
+  baseURL: 'http://localhost:8085',
+})
+
 export const estudianteApi = axios.create({
   baseURL: 'http://localhost:8085',
 })
@@ -28,4 +32,5 @@ const authInterceptor = (config: any) => {
 cursoApi.interceptors.request.use(authInterceptor)
 estudianteApi.interceptors.request.use(authInterceptor)
 asistenciaApi.interceptors.request.use(authInterceptor)
+claseApi.interceptors.request.use(authInterceptor)
 evaluacionesApi.interceptors.request.use(authInterceptor)
