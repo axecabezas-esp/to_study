@@ -1,36 +1,50 @@
-import axios from 'axios'
-import keycloak from '../keycloak'
+import axios, { InternalAxiosRequestConfig } from 'axios'
+import { InteractionRequiredAuthError } from '@azure/msal-browser'
+import { msalInstance } from '../msalConfig'
 
-export const cursoApi = axios.create({
-  baseURL: 'http://localhost:8085',
-})
+const BASE_URL = 'http://localhost:8085'
 
-export const claseApi = axios.create({
-  baseURL: 'http://localhost:8085',
-})
+// Scopes mínimos solo para mantener la sesión renovable.
+// Si más adelante expones un scope propio de API en Entra ID, agrégalo aquí.
+const tokenRequest = {
+  scopes: ['openid', 'profile'],
+}
 
-export const estudianteApi = axios.create({
-  baseURL: 'http://localhost:8085',
-})
+// Interceptor asíncrono: obtiene el token vigente (o lo renueva) antes de cada petición
+const authInterceptor = async (config: InternalAxiosRequestConfig) => {
+  const account = msalInstance.getActiveAccount() ?? msalInstance.getAllAccounts()[0]
 
-export const asistenciaApi = axios.create({
-  baseURL: 'http://localhost:8085',
-})
-
-export const evaluacionesApi = axios.create({
-  baseURL: 'http://localhost:8085',
-})
-
-// Interceptor que agrega el token JWT en cada request
-const authInterceptor = (config: any) => {
-  if (keycloak.token) {
-    config.headers.Authorization = `Bearer ${keycloak.token}`
+  if (account) {
+    try {
+      const response = await msalInstance.acquireTokenSilent({
+        ...tokenRequest,
+        account,
+      })
+      // Usamos el ID Token: es el mismo que ya usa App.tsx para leer los roles
+      config.headers.Authorization = `Bearer ${response.idToken}`
+    } catch (error) {
+      if (error instanceof InteractionRequiredAuthError) {
+        // La sesión requiere reautenticación interactiva (ej. token expirado del todo)
+        await msalInstance.acquireTokenRedirect(tokenRequest)
+      } else {
+        console.error('Error al renovar el token de sesión:', error)
+      }
+    }
   }
+
   return config
 }
 
-cursoApi.interceptors.request.use(authInterceptor)
-estudianteApi.interceptors.request.use(authInterceptor)
-asistenciaApi.interceptors.request.use(authInterceptor)
-claseApi.interceptors.request.use(authInterceptor)
-evaluacionesApi.interceptors.request.use(authInterceptor)
+const createApiInstance = () => {
+  const instance = axios.create({ baseURL: BASE_URL })
+  instance.interceptors.request.use(authInterceptor)
+  return instance
+}
+
+export const cursoApi = createApiInstance()
+export const claseApi = createApiInstance()
+export const estudianteApi = createApiInstance()
+export const asistenciaApi = createApiInstance()
+export const evaluacionesApi = createApiInstance()
+export const justificativosApi = createApiInstance()
+export const anotacionesApi = createApiInstance()
