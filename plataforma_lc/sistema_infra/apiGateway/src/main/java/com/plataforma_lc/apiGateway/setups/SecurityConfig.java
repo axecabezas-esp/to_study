@@ -18,8 +18,7 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
             .cors(cors -> cors.configurationSource(request -> {
                 CorsConfiguration config = new CorsConfiguration();
-                // Permite cualquier origen (incluyendo Cloudflare y localhost) soportando credenciales
-                config.addAllowedOriginPattern("*");
+                config.addAllowedOrigin("http://localhost:5173");
                 config.addAllowedMethod("*");
                 config.addAllowedHeader("*");
                 config.setAllowCredentials(true);
